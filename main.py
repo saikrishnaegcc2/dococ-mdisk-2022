@@ -32,11 +32,11 @@ ban = os.environ.get("BAN", "")
 def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(#"📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/")]]))
         return
 
     app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader Made By Doctor Octopus__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton(#"📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
