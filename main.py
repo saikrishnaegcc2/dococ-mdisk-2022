@@ -36,7 +36,7 @@ def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
         return
 
     app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader Made By Doctor Octopus__**',reply_to_message_id=message.id,
-    #reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
